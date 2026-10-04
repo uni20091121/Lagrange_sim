@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>2-Body Lagrange Point Simulation</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <canvas id="simulation"></canvas>
+
+    <div class="controls">
+
+        <div class="control">
+            <label>
+                Mass 1:
+                <span id="mass1Value"></span>
+            </label>
+
+            <input
+                id="mass1"
+                type="range"
+                min="1e24"
+                max="1e26"
+                step="1e23"
+                value="6e24"
+            >
+        </div>
+
+
+        <div class="control">
+            <label>
+                Mass 2:
+                <span id="mass2Value"></span>
+            </label>
+
+            <input
+                id="mass2"
+                type="range"
+                min="1e22"
+                max="1e24"
+                step="1e22"
+                value="7e22"
+            >
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
